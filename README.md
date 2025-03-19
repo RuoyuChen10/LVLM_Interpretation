@@ -1,5 +1,5 @@
 # Where do Large Vision-Language Models Look at when Answering Questions?
-The official repo for "[Where do Large Vision-Language Models Look at when Answering Questions?](https://github.com/bytedance/LVLM_Interpretation)" A PyTorch implementation for a salieny heatmap visualization method that interprets the open-ended responses of LVLMs conditioned on an image.
+The official repo for "[Where do Large Vision-Language Models Look at when Answering Questions?](https://arxiv.org/pdf/2503.13891)" A PyTorch implementation for a salieny heatmap visualization method that interprets the open-ended responses of LVLMs conditioned on an image.
 
 ### Installation
 First clone this repository and navigate to the folder.
