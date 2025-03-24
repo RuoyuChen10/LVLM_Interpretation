@@ -21,5 +21,8 @@ $ python3 main.py --method iGOS+ --model llava --dataset <dataset name> --data_p
 ```
 The explanations of each argument can be found in [args.py](args.py)
 
+### Datasets
+You may find the datasets at [https://huggingface.co/datasets/xiaoying0505/LVLM_Interpretation](https://huggingface.co/datasets/xiaoying0505/LVLM_Interpretation) to reproduce the results in the paper.
+
 ### Acknowledgement
 Some parts of the code are built upon [IGOS_pp](https://github.com/khorrams/IGOS_pp). And we use the open-source LVLMs [LLaVA-1.5](https://github.com/haotian-liu/LLaVA), [LLaVA-OneVision](https://github.com/LLaVA-VL/LLaVA-NeXT), [Cambrian](https://github.com/cambrian-mllm/cambrian) and [Mini-Gemini](https://github.com/dvlab-research/MGM) in this project. We thank the authors for their excellent work.
