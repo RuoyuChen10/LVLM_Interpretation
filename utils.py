@@ -428,8 +428,6 @@ def find_keywords(args, model, input_ids, output_ids, image, blur_image, image_s
             # condition = (probs_blur <= 0.4*probs) & (~torch.isin(output_ids[0], torch.tensor(special_ids).to(probs.device)))
             condition = (torch.log(probs)-torch.log(probs_blur) > 1.0)& (probs>=0.0) & (~torch.isin(output_ids[0], torch.tensor(special_ids).to(probs.device)))
             positions = torch.where(condition)[0].tolist()
-            if 0 in positions:
-                positions.remove(0)
             keywords = [tokenizer.decode(output_ids[0][idx]).strip() for idx in positions]
     
     return positions, keywords
